@@ -42,7 +42,7 @@
             } else {
                 const selectedCity = cityList.find(city => city.name.toLowerCase() === citySlugName);
                 const store = this.$store;
-                axios.get(`http://api.openweathermap.org/data/2.5/forecast?id=${selectedCity.id}&appid=${appKey}&units=metric`)
+                axios.get(`//api.openweathermap.org/data/2.5/forecast?id=${selectedCity.id}&appid=${appKey}&units=metric`)
                     .then(function (response) {
                         store.commit('addForecastData', response.data);
                         cityForecastData.push(response.data);

@@ -10,7 +10,7 @@
                         {{Math.round(city.main.temp)}} °C<br/>
                         {{city.name}}
                     </div>
-                    <img class="city-list__weather-icon" v-bind:src="`http://openweathermap.org/img/w/${city.weather[0].icon}.png`" />
+                    <img class="city-list__weather-icon" v-bind:src="`//openweathermap.org/img/w/${city.weather[0].icon}.png`" />
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
             const store = this.$store;
             if(weatherData.length === 0) {
                 this.cityList.forEach(city => {
-                    this.axios.get(`http://api.openweathermap.org/data/2.5/weather?id=${city.id}&appid=${appKey}&units=metric`)
+                    this.axios.get(`//api.openweathermap.org/data/2.5/weather?id=${city.id}&appid=${appKey}&units=metric`)
                         .then(function (response) {
                             store.commit('addWeatherData', response.data);
                         })
