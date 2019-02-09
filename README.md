@@ -1,7 +1,7 @@
 # Weather Forecast with Vue.js
 > Weather forecast website sample with Vue.js
 
-Test this website on Heroku: 
+Test this website on Heroku: https://vueweathersample.herokuapp.com/
 
 ## Install Node Packages
 ```
