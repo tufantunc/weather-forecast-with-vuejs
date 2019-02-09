@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a:active {
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+        margin: 0 20px;
+    }
+}

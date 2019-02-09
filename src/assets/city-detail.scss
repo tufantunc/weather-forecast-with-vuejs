@@ -1,0 +1,85 @@
+.city-detail {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-top: 50px;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &__title {
+        width: 100%;
+        overflow: auto;
+        margin-bottom: 30px;
+
+        h1 {
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        }
+
+        .router-link-active {
+            float: left;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.5);
+            transition: background-color .6s;
+            border-radius: 8px;
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+
+            &:hover {
+                background: rgba(255,255,255, 1);
+            }
+        }
+    }
+
+    &__forecast-container {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: auto;
+    }
+
+    &__forecast {
+        text-align: center;
+        font-weight: bold;
+        background-color: rgba(255,255,255,0.5);
+        color: #000;
+        padding-top: 20px;
+        flex-basis: 15%;
+        min-width: 200px;
+        margin: 0 10px 10px;
+
+        ul {
+            margin-top: 20px;
+            list-style: none;
+
+            li {
+                margin: 5px 0;
+                background-color: rgba(255,255,255,0.5);
+                transition: background-color .6s;
+                color: #000;
+                font-weight: normal;
+                text-align: left;
+                padding: 5px 10px;
+                box-sizing:border-box;
+
+                &:hover {
+                    background-color: rgba(255,255,255,1);
+                }
+
+                span:last-child {
+                    float:right;
+                }
+
+                &:last-child {
+                    margin: 5px 0 0 0;
+                }
+            }
+        }
+    }
+}
